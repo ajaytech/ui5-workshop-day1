@@ -1,0 +1,24 @@
+jQuery.sap.declare("mybtn");
+jQuery.sap.require("sap.m.core.UIComponent");
+jQuery.sap.require("sap.m.Button");
+
+sap.ui.core.UIComponent.extend("demo.Component.mybtn", {
+
+
+    metadata : {
+        properties : {
+            text: "string"
+        }
+    }
+});
+demo.Component.mybtn.createContent =  function(){
+	
+	this.oButton = new sap.m.Button("idBtn");
+	return this.oButton;
+}	
+demo.Component.mybtn.createContent.setText = function(sText){
+	this.oButton.setText(sText);
+    this.setProperty("text", sText);
+    return this;
+	
+};

@@ -1,0 +1,8 @@
+jQuery.sap.declare("demo.Component");
+
+sap.ui.core.UIComponent.extend("",{
+	
+	
+	//1st view and controller
+	
+})

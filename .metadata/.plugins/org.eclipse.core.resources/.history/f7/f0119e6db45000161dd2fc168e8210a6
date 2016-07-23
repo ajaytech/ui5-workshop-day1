@@ -1,0 +1,18 @@
+jQuery.sap.declare("demo.mybtn.Component");
+
+sap.ui.core.UIComponent.extend("demo.mybtn.Component",{
+	
+	
+	
+	createContent : function(){
+		
+		var oView = new sap.ui.view({
+			id:"idfirst1",
+			viewName:"demo.democomponents02.first",
+			type:sap.ui.core.mvc.ViewType.JS
+		});
+		
+		return oView;
+	}
+	
+})

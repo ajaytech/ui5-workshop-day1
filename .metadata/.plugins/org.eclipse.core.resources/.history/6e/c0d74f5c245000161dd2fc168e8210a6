@@ -1,0 +1,27 @@
+jQuery.sap.declare("demo.Component");
+jQuery.sap.require("sap.m.core.UIComponent");
+jQuery.sap.require("sap.m.Button");
+
+sap.ui.core.UIComponent.extend("demo.Component", {
+
+
+    metadata : {
+        properties : {
+            text: "string"
+        }
+    }
+});
+	createContent : function() {
+
+		// create root view
+		var oLabel = new sap.m.Label({
+			
+			text:"hello"
+		});
+		
+
+		// set i18n model
+		
+        return oLabel;
+	}
+});

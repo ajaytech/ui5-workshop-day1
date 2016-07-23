@@ -1,0 +1,19 @@
+jQuery.sap.declare("demo.Component");
+
+sap.ui.core.UIComponent.extend("demo.Component", {
+
+	createContent : function() {
+
+		// create root view
+		var oView = sap.ui.view({
+			id : "app",
+			viewName : "demo.democomponents.first",
+			type : "JS",
+			viewData : { component : this }
+		});
+
+		// set i18n model
+		
+        return oView;
+	}
+});

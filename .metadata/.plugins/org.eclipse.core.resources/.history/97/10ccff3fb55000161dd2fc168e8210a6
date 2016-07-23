@@ -1,0 +1,20 @@
+jQuery.sap.declare("demo.mybtn.Component");
+
+sap.ui.core.UIComponent.extend("demo.mybtn.Component",{
+	
+	
+	});
+
+demo.mybtn.Component.prototype.createContent = function(){
+		
+		this.oButton = new sap.m.Button("idBtn");
+		var thatBtn = this.oButton;
+		return thatBtn;
+	},
+	
+demo.mybtn.Component.prototype.setText = function(sText){
+		
+	
+	
+	}
+	

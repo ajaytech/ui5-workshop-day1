@@ -1,0 +1,33 @@
+jQuery.sap.declare("demo.mybtn.Component");
+
+sap.ui.core.UIComponent.extend("demo.mybtn.Component",{
+	
+	
+	metadata:{
+		
+		properties:{
+			
+			text:"string"
+		}
+	}
+	
+	});
+
+demo.mybtn.Component.prototype.createContent = function(){
+		
+		this.oButton = new sap.m.Button("idBtn");
+		var thatBtn = this.oButton;
+		return thatBtn;
+	},
+	
+demo.mybtn.Component.prototype.setText = function(sText){
+		
+		this.oButton.setText(sText);
+		this.oButton.setEnabled(false);
+		//other custome functionality which you want
+		this.setProperty("text",sText);
+		return this;	
+	
+	
+	}
+	
